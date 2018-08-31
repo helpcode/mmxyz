@@ -30,7 +30,7 @@ npm run dev
 
 | 地址 | 请求方式 | 参数 |
 | :------| ------: | :------: |
-| /index | GET | page 页数(string) |
+| /index | GET | page 页数(string) 注意：page最大81，大于81页就没有数据了！ |
 
 - 示例：
 
