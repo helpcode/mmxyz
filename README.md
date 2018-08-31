@@ -9,16 +9,20 @@ npm install
 npm run start
 ```
 
+线上接口统一运行在：
+
+> [http://103.95.207.27:9999/api/v1.0](http://103.95.207.27:9999/api/v1.0)
+
 ## 首页接口
 
 
 | 地址 | 请求方式 | 参数 |
 | :------| ------: | :------: |
-| /api/v1.0/index/页数 | GET | 页数(string) |
+| /index | GET | page 页数(string) |
 
 - 示例：
 
-[http://127.0.0.1:8080/api/v1.0/index/1](http://127.0.0.1:8080/api/v1.0/index/1)
+[http://103.95.207.27:9999/api/v1.0/index?page=1](http://103.95.207.27:9999/api/v1.0/index?page=1)
 
 - 返回数据：
 
@@ -56,11 +60,11 @@ npm run start
 
 | 地址 | 请求方式 | 参数 |
 | :------| ------: | :------: |
-| /api/v1.0/info/图册id | GET | 图册id(string) |
+| /info | GET | id 图册id(string) |
 
 - 示例：
 
-[http://127.0.0.1:8080/api/v1.0/info/2221](http://127.0.0.1:8080/api/v1.0/info/2221)
+[http://103.95.207.27:9999/api/v1.0/info?id=2221](http://103.95.207.27:9999/api/v1.0/info?id=2221)
 
 - 返回数据：
 

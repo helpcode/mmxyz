@@ -6,7 +6,7 @@ module.exports = {
   // 储存解析出来的json数据
   HtmlJson: [],
   // 网站运行端口
-  port: "8080",
+  port: "9999",
   // 是否下载图片 true 下载，false 不下载
-  isDownJpg: true
+  isDownJpg: false
 };

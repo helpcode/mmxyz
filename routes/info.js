@@ -1,7 +1,7 @@
 const head = require("./../imports");
 
-head.router.get("/info/:id", function(req, res, next) {
-  var id = req.params.id;
+head.router.get("/info", function(req, res, next) {
+  var id = req.query.id;
   var URL = `${head.config.hostUrl}rosi-${id}`;
   head.config.HtmlJson = []
   head.utils.HttpRequest(URL, result => {

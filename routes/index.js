@@ -1,7 +1,7 @@
 const head = require("./../imports");
 
-head.router.get("/index/:page", function(req, res, next) {
-  var page = req.params.page || 1;
+head.router.get("/index", function(req, res, next) {
+  var page = req.query.page || 1;
   head.config.HtmlJson = []
   head.utils.HttpRequest(`${head.config.index}${page}`, result => {
     var $ = head.cheerio.load(result);

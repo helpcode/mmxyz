@@ -31,6 +31,6 @@ module.exports = {
       ? request
           .get(url)
           .pipe(fs.createWriteStream(`down/${name}-${Math.random(1000)}.jpg`))
-      : console.log("不下载，输出json");
+      : console.log("不下载，只输出json");
   }
 };
